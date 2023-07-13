@@ -2,7 +2,7 @@ import React, { Suspense } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { Container } from "@mui/material";
 import { NotificationContainer } from "react-notifications";
-import { Applayout } from "./components/layout/AppLayout";
+import { Applayout } from "./components/Layout/AppLayout";
 
 function App() {
   return (

@@ -1,23 +1,38 @@
-import { Link } from "react-router-dom";
+import { Link, Routes, Route, Navigate } from "react-router-dom";
+import { useState } from "react";
 import {
   AppBar,
   Container,
   Box,
   Toolbar,
-  IconButton,
   Typography,
-  Avatar,
   Tooltip,
   Button
 } from "@mui/material";
-import AdbIcon from "@mui/icons-material/Adb";
+
+import MenuBookIcon from '@mui/icons-material/MenuBook';
+import { BooksList } from "../BookList/BookList";
+import { LoginDialog } from "../Login/LoginDialog";
 export const Applayout = () => {
+
+  const [openLoginDialog, setOpenLoginDialog] = useState(false);
+
+  const handleLoginSubmit = (username, password) => {
+    setOpenLoginDialog(false)
+    console.log(username, password)
+
+  }
+  const handleLoginClose = () => {
+    setOpenLoginDialog(false)
+
+  }
+
   return (
     <>
       <AppBar position="static">
         <Container maxWidth="xl">
           <Toolbar disableGutters>
-            <AdbIcon sx={{ display: "flex", mr: 1 }} />
+            <MenuBookIcon sx={{ display: "flex", mr: 1 }} />
             <Link to="/" style={{ textDecoration: "none", flexGrow: 1 }}>
               <Typography
                 variant="h6"
@@ -46,9 +61,9 @@ export const Applayout = () => {
 
 
                 <Button
-                  /* onClick={() => {
+                  onClick={() => {
                     setOpenLoginDialog(true)
-                  }} */
+                  }}
                   sx={{ my: 2, color: "white", display: "block" }}
                 >
                   Login
@@ -57,7 +72,12 @@ export const Applayout = () => {
             </Box>
           </Toolbar>
         </Container>
-      </AppBar>
+      </AppBar >
+      <Routes>
+        <Route path="/books" exact element={<BooksList />} />
+        <Route path="*" element={<Navigate to="/books" replace />} />
+      </Routes>
+      <LoginDialog open={openLoginDialog} handleSubmit={handleLoginSubmit} handleClose={handleLoginClose}></LoginDialog>
     </>
   );
 };
