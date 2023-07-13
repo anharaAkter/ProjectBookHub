@@ -8,6 +8,7 @@ import {
   Typography,
   Avatar,
   Tooltip,
+  Button
 } from "@mui/material";
 import AdbIcon from "@mui/icons-material/Adb";
 export const Applayout = () => {
@@ -30,7 +31,7 @@ export const Applayout = () => {
                   color: "white",
                 }}
               >
-                Library Management System
+                BookHub
               </Typography>
             </Link>
             <Box
@@ -40,10 +41,18 @@ export const Applayout = () => {
             >
               <>
                 <Tooltip title="Open settings">
-                  <IconButton sx={{ p: 0 }}>
-                    <Avatar> </Avatar>
-                  </IconButton>
+
                 </Tooltip>
+
+
+                <Button
+                  /* onClick={() => {
+                    setOpenLoginDialog(true)
+                  }} */
+                  sx={{ my: 2, color: "white", display: "block" }}
+                >
+                  Login
+                </Button>
               </>
             </Box>
           </Toolbar>
