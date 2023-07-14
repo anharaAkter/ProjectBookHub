@@ -1,5 +1,5 @@
 # BookHub
-<h1 align="center">Hi this a project for my Formation Conceptual depeloppement of Application BookHub</h1>
+<h1 align="center">Hi this a project for my Formation Conceptual Developpement of Application BookHub</h1>
 <h3 align="center">A passionate frontend developer</h3>
 
 - 🔭 I’m currently working on **Octo Technology as apprentice**
