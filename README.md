@@ -1,16 +1,16 @@
 # BookHub
-<h1 align="center">Hi this a project for my Formation Conceptual depeloppement of Application BookHub</h1>
+<h1 align="center">Hi this is a project for my Formation Conceptual depeloppement of Application . Project name BookHub</h1>
 <h3 align="center">A passionate frontend developer</h3>
 
 - 🔭 I’m currently working on **Octo Technology as apprentice**
 
-- 🌱 I’m currently learning **TypeScript , Node Js**
+- 🌱 I’m currently learning **TypeScript , Node Js, Spring Boot**
 
 - 💬 Ask me about **React** **Java**
 
 - 📫 How to reach me **anhara.susoma@gmail.com**
 
-- ⚡ Fun fact **I think I am a little bit Shy person . But Curious to learn new topic**
+- ⚡ Fun fact **I think I am a little bit Shy person . But Curious to learn new topics and also always motivated to learn new techno**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
