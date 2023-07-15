@@ -3,7 +3,7 @@
 # dependencies
 .vscode
 
-/backend
+
 
 # testing
 /coverage
